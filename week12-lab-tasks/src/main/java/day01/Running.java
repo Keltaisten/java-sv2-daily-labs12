@@ -39,11 +39,4 @@ public class Running {
         return sum;
     }
 
-    public static void main(String[] args) {
-        Running running = new Running();
-        running.readFile("src/main/resources/running.csv");
-        System.out.println(running.runnings.get(0).getDateOfRun().getYear());
-        System.out.println(running.runnings.get(0).getDateOfRun().getMonth());
-        System.out.println(running.sumRunningDistance(2021, Month.DECEMBER));
-    }
 }
